@@ -34,7 +34,7 @@
 ⚡'features' package'inin altinda olusturdugum .feature uzantılı dosyada test steplerini Gherkin Language ile yazdım <br>
 ⚡.feature uzantılı dosyada yazdığım steplerin kodlarını 'AmazonStepDefinitions' class'inda yazdım <br>
 ⚡Gherkin Language ile oluşturduğum adımlarıda bazı değerleri parametreli olarak oluşturarak daha dinamik bir kodlamayı hedefledim
-<br> &emsp; ![image](https://user-images.githubusercontent.com/111094536/212753751-6c8808d6-4eba-4084-8d17-0cc994c7881b.png)
+![image](https://user-images.githubusercontent.com/111094536/212753751-6c8808d6-4eba-4084-8d17-0cc994c7881b.png)
 ⚡'configuration.properties' file'ini oluşturarak tekrar tekrar kullanılacak olan verileri buraya kaydettim ve bu verileri utilities package'i altindaki ConfigReader class'ı aracılığı ile dinamik bir şekilde kullandım <br> <br>
 
 ### Projenin Ayağa Kaldırılması
