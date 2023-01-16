@@ -14,7 +14,7 @@ INSERT INTO users_default values (default,'kemalugur@yahoo.com','Kemal','UGUR');
 INSERT INTO users_default values (default,'salihgencer@hotmail.com','Salih','GENCER');
 
 -- b. Tablodaki verileri user_email alanı küçükten büyüğe olacak şekilde sıralayın.
-SELECT * FROM users_default ORDER BY user_email DESC;
+SELECT * FROM users_default ORDER BY user_email ASC;
 
 -- c. Tablodaki son verinin user_surname alanını güncelleyin.
 UPDATE users_default
