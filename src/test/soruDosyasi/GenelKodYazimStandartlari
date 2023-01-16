@@ -1,7 +1,5 @@
-package pages;
-
-public class SonSoru {
     // SORU - 4: Aşağıdaki kod parçasını genel kod yazım standartlarına uygun hale getiriniz
+   
     /*
 
     public void içerikKontrol(String Yazi1,String 2yazi)
@@ -49,4 +47,3 @@ public class SonSoru {
     // 2- Turkce karakterler degistirilmis,
     // 3- Kucuk harfle baslamasi gereken isimlendirmeler ve keywordler olmasi gerektigi gibi kucuk harfe donusturulmus
     // 4- Kod blogunun bitmesinden sonra baslayacak olan kod satirlari hizalanmistir.
-}

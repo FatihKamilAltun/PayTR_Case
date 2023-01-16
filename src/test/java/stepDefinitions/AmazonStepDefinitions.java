@@ -15,7 +15,7 @@ import java.util.List;
 
 public class AmazonStepDefinitions {
     AmazonPage amazonPage = new AmazonPage();
-    String path = "C:\\Users\\FatihKamil\\Desktop\\payTR.txt";
+    String path = "C:\\Users\\FatihKamil\\Desktop\\UrunBilgileri.txt";
     File file = new File(path);
     FileWriter fileWriter = new FileWriter(path);
 
