@@ -25,29 +25,33 @@
 ⚡Otomasyon kodlarımı yazarken Java programlama dilini ve Selenium kütüphanesini kullandım <br>
 ⚡Java programlama dili ile birlikte OOP (Object - Oriented Programming) konseptini kullandım <br>
 ⚡Cucumber frameworkunu POM (Page Object Model) modeli üzerine oluşturdum <br>
-⚡'test' package'inin altinda 'pages', 'runners', 'stepDefinitions', 'utilities' package'leri oluşturdum
-&emsp; ![image](https://user-images.githubusercontent.com/111094536/212743663-796756e4-79a1-40e2-a456-ffcda60b6d23.png) <br> <br>
+⚡'test' package'inin altinda 'pages', 'runners', 'stepDefinitions', 'utilities' package'leri oluşturdum <br>
+![image](https://user-images.githubusercontent.com/111094536/212743663-796756e4-79a1-40e2-a456-ffcda60b6d23.png) <br> <br>
 
 ### Kodlama
 ⚡Kodlarımı yazarken solid prensiplerine uyarak clean yazmaya dikkat ettim <br>
 ⚡Verilen task kapsamında ilgili sitenin locate'lerini alarak 'AmazonPage' class'ına koydum ve daha sonra bu class'tan oluşturduğum obje ile bu locate'leri kullandım <br>
 ⚡'features' package'inin altinda olusturdugum .feature uzantılı dosyada test steplerini Gherkin Language ile yazdım <br>
 ⚡.feature uzantılı dosyada yazdığım steplerin kodlarını 'AmazonStepDefinitions' class'inda yazdım <br>
-⚡Gherkin Language ile oluşturduğum adımlarıda bazı değerleri parametreli olarak oluşturarak daha dinamik bir kodlamayı hedefledim <br>
-![image](https://user-images.githubusercontent.com/111094536/212753751-6c8808d6-4eba-4084-8d17-0cc994c7881b.png)
+⚡Gherkin Language ile oluşturduğum adımlarıda bazı değerleri parametreli olarak oluşturarak daha dinamik bir kodlamayı hedefledim
+<br> &emsp; ![image](https://user-images.githubusercontent.com/111094536/212753751-6c8808d6-4eba-4084-8d17-0cc994c7881b.png)
 ⚡'configuration.properties' file'ini oluşturarak tekrar tekrar kullanılacak olan verileri buraya kaydettim ve bu verileri utilities package'i altindaki ConfigReader class'ı aracılığı ile dinamik bir şekilde kullandım <br> <br>
 
 ### Projenin Ayağa Kaldırılması
 ⚡Projem hem .feature file'indan hem de Runners class'indan ayağa kaldırılabilmektedir <br>
 ⚡Projenin ayağa kalkmasından sonra test adımları çalışarak sırasıyla, tarayıcı açılmakta, amazon.com.tr sayfasından 'Macbook Pro' isimli ürün aratılıp ilk çıkan sonucun ayrıntıları açılmakta daha sonrasında detayları görüntülenen ürünün fiyatı, model adı ve CPU modeli bir dosyaya yazdırılıp tarayıcı kapanmaktadır <br>
-⚡File ve FileWriter class'ları sayesinde kullanıcının masaüstünde bir .txt uzantılı dosya oluşturularak aratılan ürünün istenen bilgileri bu dosyaya yazdırılmıştır <br> <br>
+⚡File ve FileWriter class'ları sayesinde kullanıcının masaüstünde bir .txt uzantılı dosya oluşturularak aratılan ürünün istenen bilgileri bu dosyaya yazdırılmıştır <br>
+⚡Önemle belirtmem gerekir ki, bu testi localinde koşmak isteyen kullanıcının projemin 'AmazonStepDefinitions' class'inin 18. satırındaki path değişkenindeki dosya yolunu kendi bilgisayarına uyarlaması gerekmektedir <br>
+⚡Aşağıdaki linkte testin koşum videosu bulunmaktadır <br>
+https://www.loom.com/share/c045b738c7494ed5b85f175937658cb8
+<br> <br>
 
 ### Raporlama
 ⚡'runners' package'i altındaki Runner class'ındaki plugin sayesinde kod her çalıştığında .html uzantılı bir dosya oluşturularak raporlarım bu dosyaya kaydedildi <br>
-⚡Bu .html uzantılı dosyayı tarayıcıda açtığımda bana raporları sağlıklı bir şekilde verdi <br>
-![WhatsApp Görsel 2023-01-16 saat 22 35 44](https://user-images.githubusercontent.com/111094536/212754314-b607a803-b640-472d-9afb-a96bb6e49026.jpg)
+⚡Bu .html uzantılı dosyayı tarayıcıda açtığımda bana raporları sağlıklı bir şekilde verdi 
+![WhatsApp Görsel 2023-01-16 saat 22 35 44](https://user-images.githubusercontent.com/111094536/212754314-b607a803-b640-472d-9afb-a96bb6e49026.jpg) 
 ![image](https://user-images.githubusercontent.com/111094536/212754516-d103f3c6-8176-4a6d-a8e5-b520f75603d4.png)
-![image](https://user-images.githubusercontent.com/111094536/212754460-715fb746-cc55-435b-a917-bca244692912.png)
+![image](https://user-images.githubusercontent.com/111094536/212754460-715fb746-cc55-435b-a917-bca244692912.png) 
 
 
 
