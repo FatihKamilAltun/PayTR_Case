@@ -24,3 +24,5 @@ WHERE id in(SELECT id FROM users_default ORDER BY id DESC LIMIT 1);
 -- d. Tablodaki ilk veriyi silin.
 DELETE FROM users_default
 WHERE id in(SELECT id FROM users_default ORDER BY id LIMIT 1);
+
+-- Not: Table'ın id bölümünü PostgreSQL toolu kullandığım için 'serial' şeklinde revize ettim
