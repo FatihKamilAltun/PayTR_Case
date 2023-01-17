@@ -9,17 +9,21 @@ create table users_default
 SELECT * FROM users_default;
 
 -- a. Tabloya bir veri ekleyin.
-INSERT INTO users_default values (default,'asiyecan@gmail.com','Asiye','CAN');
 INSERT INTO users_default values (default,'kemalugur@yahoo.com','Kemal','UGUR');
 INSERT INTO users_default values (default,'salihgencer@hotmail.com','Salih','GENCER');
+INSERT INTO users_default values (default,'asiyecan@gmail.com','Asiye','CAN');
+INSERT INTO users_default values (default,'burakatay@gmail.com','Burak','ATAY');
+
 
 -- b. Tablodaki verileri user_email alanı küçükten büyüğe olacak şekilde sıralayın.
 SELECT * FROM users_default ORDER BY user_email ASC;
+
 
 -- c. Tablodaki son verinin user_surname alanını güncelleyin.
 UPDATE users_default
 SET user_surname='degisti'
 WHERE id in(SELECT id FROM users_default ORDER BY id DESC LIMIT 1);
+
 
 -- d. Tablodaki ilk veriyi silin.
 DELETE FROM users_default
