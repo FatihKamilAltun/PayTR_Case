@@ -10,15 +10,13 @@ public class AmazonPage {
         PageFactory.initElements(Driver.getDriver(),this);
 
     }
-
+    @FindBy(xpath = "//input[@class='a-button-input celwidget']")
+    public WebElement acceptCookies;
     @FindBy (id= "twotabsearchtextbox")
     public WebElement searchBox;
 
     @FindBy(xpath = "//div[@class='a-section aok-relative s-image-square-aspect']")
     public WebElement firstResult;
-
-    @FindBy(xpath = "//input[@class='a-button-input celwidget']")
-    public WebElement acceptCookies;
 
     @FindBy(xpath = "//div[@id='corePriceDisplay_desktop_feature_div']")
     public WebElement priceOfProduct;

@@ -23,8 +23,8 @@ public class AmazonStepDefinitions {
     }
 
     @Given("Kullanici {string} anasayfasinda")
-    public void kullaniciAnasayfasinda(String expectedUrl) {
-        Driver.getDriver().get(ConfigReader.getProperty(expectedUrl));
+    public void kullaniciAnasayfasinda(String wantedUrl) {
+        Driver.getDriver().get(ConfigReader.getProperty(wantedUrl));
         // ConfigReader araciligi ile configuration.properties dosyasinda olusturulan bilgiler koda alinarak kod daha dinamik hale getirildi.
 
     }
@@ -43,14 +43,14 @@ public class AmazonStepDefinitions {
     }
 
     @Then("Kullanici {string} aratir")
-    public void kullaniciAratir(String istenenKelime) {
-        amazonPage.searchBox.sendKeys(istenenKelime + Keys.ENTER);
+    public void kullaniciAratir(String wantedWord) {
+        amazonPage.searchBox.sendKeys(wantedWord + Keys.ENTER);
         // Arama cubuguna, .feature uzantili file'daki parametreli bolume yazilan urunun adi girildi,
         // ardindan Keys classi kullanilarak klavyedeki ENTER tusuna basilarak arama gerceklestirildi
     }
 
     @And("Kullanici sonuc sayfasindan ilk sonuca tiklar")
-    public void kullaniciSonucSayfasindanIlkSonucaTiklar() throws InterruptedException {
+    public void kullaniciSonucSayfasindanIlkSonucaTiklar() {
         amazonPage.firstResult.click();
     }
 
@@ -69,16 +69,16 @@ public class AmazonStepDefinitions {
         // 'UrunBilgileri.txt' isminde bir dosya olmamasi durumunda bu isimde bir dosya create edildi.
         // FileWriter class'i kullanilarak String'e atilan urun fiyati bu dosyaya yazdirildi
 
-        List<WebElement> table = Driver.getDriver().findElements(By.xpath("//tr/td/span"));
+        List<WebElement> tableList = Driver.getDriver().findElements(By.xpath("//tr/td/span"));
         int count = 0;
-        for (WebElement w : table) {
+        for (WebElement w : tableList) {
             if (w.getText().equalsIgnoreCase("Model Adı")) {
-                String modelAdi = "Model Adı: " + table.get(count + 1).getText();
+                String modelAdi = "Model Adı: " + tableList.get(count + 1).getText();
                 fileWriter.write(modelAdi);
                 fileWriter.write("\n");
 
             } else if (w.getText().equalsIgnoreCase("CPU Modeli")) {
-                String cpuModel = "CPU Modeli: " + table.get(count + 1).getText();
+                String cpuModel = "CPU Modeli: " + tableList.get(count + 1).getText();
                 fileWriter.write(cpuModel);
                 fileWriter.close();
 
