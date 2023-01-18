@@ -43,7 +43,7 @@
 ⚡File ve FileWriter class'ları sayesinde kullanıcının masaüstünde bir .txt uzantılı dosya oluşturularak aratılan ürünün istenen bilgileri bu dosyaya yazdırılmıştır. <br>
 ‼️ Önemle belirtmem gerekir ki, bu testi localinde koşmak isteyen kullanıcının projemin 'AmazonStepDefinitions' class'ının 18. satırındaki path değişkenindeki dosya yolunu kendi bilgisayarına uyarlaması gerekmektedir. ‼️ <br>
 ⚡Aşağıdaki linkte testin koşum videosu bulunmaktadır. <br>
-https://www.loom.com/share/c045b738c7494ed5b85f175937658cb8
+https://www.loom.com/share/43d6a09f96ad4f608a74ef77dfe55c53
 <br> <br>
 
 ### Raporlama
