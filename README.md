@@ -1,4 +1,4 @@
-# 💻 PayTR Çalışma Senaryosu 💻
+# <div align="center"><p>💻 PayTR Çalışma Senaryosu 💻 </p> </div>
 ### Projede Kullandığım Toollar <br> 
 [<a href="https://www.jetbrains.com/idea/features/" target="_blank" rel=”noopener”> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQalKFwVDd0H7Xx8HaqWBbUmDRdrgxUoicGBZC0eIzTsww7Sev-ySXJ3in9Udv2R9CR3lo&usqp=CAU" alt="IntelliJ" width="50" height="50"/> </a>][intellij]
 [<img height="50" width="50" src="https://raw.githubusercontent.com/github/explore/5b3600551e122a3277c2c5368af2ad5725ffa9a1/topics/java/java.png">][java]
