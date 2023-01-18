@@ -56,13 +56,18 @@ public class AmazonStepDefinitions {
 
     @And("Kullanici urunun fiyat, seri adi ve CPU modeli bilgilerini bir dosyaya yazdirir")
     public void kullaniciUrununFiyatSeriAdiVeCPUModeliBilgileriniBirDosyayaYazdirir() throws IOException {
-        String price=amazonPage.priceOfProduct.getText();
+        String price="";
+        List<WebElement> priceList=Driver.getDriver().findElements(By.xpath("//div/span/span/span"));
+        for (int i = 0; i < 3; i++) {
+            price+=priceList.get(i).getText();
+
+        }
         if (file.exists()){
 
         }else {
             file.createNewFile();
         }
-        fileWriter.write(price);
+        fileWriter.write("Urun Fiyati: " + price);
         fileWriter.write("\n");
         // Urunun fiyati get.Text() methodu ile alinarak String bir konteyner'a atildi.
         // File class'i kullanilarak projenin kosulacagi bilgisayarin masaustunde
