@@ -34,7 +34,7 @@
 ⚡'features' package'ının altında oluşturduğum .feature uzantılı dosyada test steplerini Gherkin Language ile yazdım. <br>
 ⚡.feature uzantılı dosyada yazdığım steplerin kodlarını 'AmazonStepDefinitions' class'ında yazdım. <br>
 ⚡Gherkin Language ile oluşturduğum steplerde bazı değerleri parametreli oluşturarak daha dinamik bir kod yazımını hedefledim. <br> <br>
- ![image](https://user-images.githubusercontent.com/111094536/213112706-cdd4a339-7397-4af1-9bd1-191a3d7fb7aa.png)
+ ![image](https://user-images.githubusercontent.com/111094536/213122597-f104b2b5-669d-4dd5-89d7-8bf70196c09d.png) <br>
 ⚡'configuration.properties' file'ını oluşturarak tekrar tekrar kullanılacak olan verileri buraya kaydettim ve bu verileri utilities package'ı altındaki ConfigReader class'ı aracılığı ile dinamik bir şekilde kullandım. <br> <br>
 
 ### Projenin Ayağa Kaldırılması
@@ -52,7 +52,7 @@ https://www.loom.com/share/43d6a09f96ad4f608a74ef77dfe55c53
 ⚡Bu .html uzantılı dosyayı tarayıcıda açtığımda bana raporları sağlıklı bir şekilde verdi. <br> <br>
 ![WhatsApp Görsel 2023-01-16 saat 22 35 44](https://user-images.githubusercontent.com/111094536/212754314-b607a803-b640-472d-9afb-a96bb6e49026.jpg) 
 ![image](https://user-images.githubusercontent.com/111094536/212754516-d103f3c6-8176-4a6d-a8e5-b520f75603d4.png)
-![image](https://user-images.githubusercontent.com/111094536/213113008-a410fa39-e703-4e5e-a06d-653a21a7c63e.png) <hr>
+![image](https://user-images.githubusercontent.com/111094536/213122801-af569834-3244-487a-ad04-d57230ca08c0.png) <hr>
 
 
 
