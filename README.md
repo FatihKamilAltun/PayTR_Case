@@ -39,7 +39,7 @@
 
 ### Projenin Ayağa Kaldırılması
 ⚡Projem hem .feature uzantılı file'dan hem de Runners class'ından ayağa kaldırılabilmektedir. <br>
-⚡Projenin ayağa kalkmasından sonra test adımları çalışarak sırasıyla, tarayıcı açılmakta, amazon.com.tr sayfasından 'Macbook Pro' isimli ürün aratılıp ilk çıkan sonucun ayrıntıları açılmakta daha sonrasında detayları görüntülenen ürünün fiyatı, model adı ve CPU modeli bir dosyaya yazdırılıp tarayıcı kapanmaktadır. <br>
+⚡Projenin ayağa kalkmasından sonra test adımları çalışarak sırasıyla, tarayıcı açılmakta, amazon.com.tr sayfasından 'lenovo ideapad 5 pro' isimli ürün aratılıp ilk çıkan sonucun ayrıntıları açılmakta daha sonrasında detayları görüntülenen ürünün fiyatı, seri adı ve CPU modeli bir dosyaya yazdırılıp tarayıcı kapanmaktadır. <br>
 ⚡File ve FileWriter class'ları sayesinde kullanıcının masaüstünde bir .txt uzantılı dosya oluşturularak aratılan ürünün istenen bilgileri bu dosyaya yazdırılmıştır. <br>
 ‼️ Önemle belirtmem gerekir ki, bu testi localinde koşmak isteyen kullanıcının projemin 'AmazonStepDefinitions' class'ının 18. satırındaki path değişkenindeki dosya yolunu kendi bilgisayarına uyarlaması gerekmektedir. ‼️ <br>
 ⚡Aşağıdaki linkte testin koşum videosu bulunmaktadır. <br>
