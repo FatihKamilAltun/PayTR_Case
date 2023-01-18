@@ -4,7 +4,7 @@ Feature: Amazon Search
   Background: Ortak adim
     Given Kullanici "amazonUrl" anasayfasinda
 
-  Scenario: TC001 Kullanici amazonda 'MacBook Pro' aratir ve bilgilerini bir dosyaya yazdirir
+  Scenario: TC001 Kullanici amazonda 'lenovo ideapad 5 pro' aratir ve bilgilerini bir dosyaya yazdirir
     And Kullanici cookieleri kabul eder
     And Kullanici "amazonUrl" sayfasinda oldugunu dogrular
     Then Kullanici "lenovo ideapad 5 pro" aratir
