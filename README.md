@@ -48,6 +48,7 @@ https://www.loom.com/share/c045b738c7494ed5b85f175937658cb8
 
 ### Raporlama
 ⚡'runners' package'ı altındaki Runner class'ındaki plugin sayesinde kod her çalıştığında 'target' klasörünün altında .html uzantılı bir dosya oluşturularak raporlarım bu dosyaya kaydedildi. <br>
+⚡Raporlamayı alabilmek için projenin .feature uzantılı file'dan değil Runner class'ından ayağa kaldırılması gerekmektedir. <br>
 ⚡Bu .html uzantılı dosyayı tarayıcıda açtığımda bana raporları sağlıklı bir şekilde verdi. <br> <br>
 ![WhatsApp Görsel 2023-01-16 saat 22 35 44](https://user-images.githubusercontent.com/111094536/212754314-b607a803-b640-472d-9afb-a96bb6e49026.jpg) 
 ![image](https://user-images.githubusercontent.com/111094536/212754516-d103f3c6-8176-4a6d-a8e5-b520f75603d4.png)
