@@ -3,6 +3,7 @@ package stepDefinitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -35,11 +36,13 @@ public class AmazonStepDefinitions {
     }
 
     @And("Kullanici {string} sayfasinda oldugunu dogrular")
-    public void kullaniciSayfasindaOldugunuDogrular(String expectedTitle) {
-        String pageTitle = Driver.getDriver().getTitle();
-        assert pageTitle.contains(expectedTitle);
-        // amazon.com.tr sayfasina gidildigini dogrulamak icin, sayfanin basligi bir String konteynerina konuldu.
-        // Sayfanin basliginda 'Amazon' kelimesinin icerdiginin dogrulanmasi ile dogru sayfaya gelindigi anlasildi.
+    public void kullaniciSayfasindaOldugunuDogrular(String expectedUrl) {
+        String pageUrl = Driver.getDriver().getCurrentUrl();
+        Assert.assertEquals(pageUrl,ConfigReader.getProperty(expectedUrl));
+        // amazon.com.tr sayfasina gidildigini dogrulamak icin,
+        // sayfanin url'si getCurrentUrl() methodu ile bir String konteynerina konuldu.
+        // Gidilmek istenen sayfanin url'sinin gidilen sayfanin url'sine esit oldugunun
+        // Assert class'i yardimiyla dogrulanmasi ile dogru sayfaya gidildigi anlasildi.
     }
 
     @Then("Kullanici {string} aratir")
@@ -72,7 +75,9 @@ public class AmazonStepDefinitions {
         // Urunun fiyati get.Text() methodu ile alinarak String bir konteyner'a atildi.
         // File class'i kullanilarak projenin kosulacagi bilgisayarin masaustunde
         // 'UrunBilgileri.txt' isminde bir dosya olmamasi durumunda bu isimde bir dosya create edildi.
-        // FileWriter class'i kullanilarak String'e atilan urun fiyati bu dosyaya yazdirildi
+        // FileWriter class'i kullanilarak String'e atilan urun fiyati bu dosyaya yazdirildi.
+        // Eger testin kosulacagi bilgisayarin masaüstünde
+        // 'UrunBilgileri.txt' isimli bir dosya mevcut ise urunun bilgileri bu dosyanin uzerine yazilmis oldu.
 
         List<WebElement> tableList = Driver.getDriver().findElements(By.xpath("//tr/td/span"));
         int count = 0;
