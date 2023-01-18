@@ -7,7 +7,7 @@ Feature: Amazon Search
   Scenario: TC001 Kullanici amazonda 'MacBook Pro' aratir ve bilgilerini bir dosyaya yazdirir
     And Kullanici cookieleri kabul eder
     And Kullanici "Amazon" sayfasinda oldugunu dogrular
-    Then Kullanici "Macbook Pro" aratir
+    Then Kullanici "lenovo ideapad 5 pro" aratir
     And Kullanici sonuc sayfasindan ilk sonuca tiklar
-    And Kullanici urunun fiyat, model adi ve CPU modeli bilgilerini bir dosyaya yazdirir
+    And Kullanici urunun fiyat, seri adi ve CPU modeli bilgilerini bir dosyaya yazdirir
     And Kullanici sayfayi kapatir

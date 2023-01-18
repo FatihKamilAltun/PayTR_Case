@@ -54,8 +54,8 @@ public class AmazonStepDefinitions {
         amazonPage.firstResult.click();
     }
 
-    @And("Kullanici urunun fiyat, model adi ve CPU modeli bilgilerini bir dosyaya yazdirir")
-    public void kullaniciUrununFiyatModelAdiVeCPUModeliBilgileriniBirDosyayaYazdirir() throws IOException {
+    @And("Kullanici urunun fiyat, seri adi ve CPU modeli bilgilerini bir dosyaya yazdirir")
+    public void kullaniciUrununFiyatSeriAdiVeCPUModeliBilgileriniBirDosyayaYazdirir() throws IOException {
         String price=amazonPage.priceOfProduct.getText();
         if (file.exists()){
 
@@ -72,8 +72,8 @@ public class AmazonStepDefinitions {
         List<WebElement> tableList = Driver.getDriver().findElements(By.xpath("//tr/td/span"));
         int count = 0;
         for (WebElement w : tableList) {
-            if (w.getText().equalsIgnoreCase("Model Adı")) {
-                String modelAdi = "Model Adı: " + tableList.get(count + 1).getText();
+            if (w.getText().equalsIgnoreCase("Seri")) {
+                String modelAdi = "Seri Adı: " + tableList.get(count + 1).getText();
                 fileWriter.write(modelAdi);
                 fileWriter.write("\n");
 
@@ -85,18 +85,20 @@ public class AmazonStepDefinitions {
             }
             count++;
         }
-        // Urunun model adi ve CPU modelinin bulundugu table seklinde olusturulan kisimdaki WebElementler bir List'e atildi.
-        // Bu List'teki her WebElement'in text'i tek tek kontrol edilerek 'Model Adı'na ve 'CPU Modeli'ne esit olması durumunda
+        // Urunun seri adi ve CPU modelinin bulundugu table seklinde olusturulan kisimdaki WebElementler bir List'e atildi.
+        // Bu List'teki her WebElement'in text'i tek tek kontrol edilerek 'Seri'ye ve 'CPU Modeli'ne esit olması durumunda
         // kendilerinden bir sonra gelen WebElement'in text bilgileri
         // daha onceden olusturulmus olan 'UrunBilgileri.txt' uzantılı dosyaya FileWriter class'i yardimiyla yazdirildi.
-        // Zira 'Model Adi'ndan sonra gelen WebElement'in text bilgisi urunun model adini,
+        // Zira 'Seri'den sonra gelen WebElement'in text bilgisi urunun seri adini,
         // ayni sekilde 'CPU Modeli'nden sonra gelen WebElement'in text bilgisi de urunun CPU modeli bilgisini icermektedir.
+        // Not: Soruda verilen 'model adi' bilgisi yerine urunun ozelliklerinde yer alan 'Seri' bilgisi alinmistir
     }
 
     @And("Kullanici sayfayi kapatir")
     public void kullaniciSayfayiKapatir() {
         Driver.closeDriver();
     }
+
 
 
 }
